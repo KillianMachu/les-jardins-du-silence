@@ -1,0 +1,80 @@
+/*
+Theme Name: Les Jardins du Silence Theme
+Template: twentytwentyfive
+Theme URI: https://killianmachu.fr/
+Author: Killian Machu
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 7.0
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ljds-bedroom
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+@font-face {
+    font-family: 'Atteron';
+    src: url("./assets/webfonts/Atteron.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ljds_name {
+    font-family: Atteron, sans-serif;
+    font-weight: bold;
+}
+
+.center-img {
+    margin: auto !important;
+}
+
+
+/* Form */
+
+.wpcf7-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wpcf7-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.wpcf7-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.wpcf7-form input[type="submit"] {
+    background: #0073e6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.wpcf7-form input[type="submit"]:hover {
+    background: #005bb5;
+}

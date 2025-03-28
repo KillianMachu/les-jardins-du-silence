@@ -1,0 +1,308 @@
+# Copyright (C) 2025 Killian Machu
+# This file is distributed under the GPL-3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ljds Bedroom Manager 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ljds-bedroom-manager\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-03-27T21:50:55+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: ljds-bedroom-manager\n"
+
+#. Plugin Name of the plugin
+#: C:\Users\killi\Local Sites\les-jardins-du-silence\app\public\wp-content\plugins\ljds-bedroom-manager\ljds-bedroom-manager.php
+msgid "Ljds Bedroom Manager"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: C:\Users\killi\Local Sites\les-jardins-du-silence\app\public\wp-content\plugins\ljds-bedroom-manager\ljds-bedroom-manager.php
+msgid "https://killianmachu.fr/"
+msgstr ""
+
+#. Description of the plugin
+#: C:\Users\killi\Local Sites\les-jardins-du-silence\app\public\wp-content\plugins\ljds-bedroom-manager\ljds-bedroom-manager.php
+msgid "A plugin to manage bedrooms"
+msgstr ""
+
+#. Author of the plugin
+#: C:\Users\killi\Local Sites\les-jardins-du-silence\app\public\wp-content\plugins\ljds-bedroom-manager\ljds-bedroom-manager.php
+msgid "Killian Machu"
+msgstr ""
+
+#: inc/CustomFields.php:24
+msgid "Number of beds"
+msgstr ""
+
+#: inc/CustomFields.php:26
+msgid "bed_number"
+msgstr ""
+
+#: inc/CustomFields.php:27
+msgid "For example : 4"
+msgstr ""
+
+#: inc/CustomFields.php:30
+msgid "Price per night (in €)"
+msgstr ""
+
+#: inc/CustomFields.php:33
+msgid "bedroom_price"
+msgstr ""
+
+#: inc/CustomFields.php:34
+msgid "For example : 90"
+msgstr ""
+
+#: inc/PostType.php:17
+msgctxt "Post type general name"
+msgid "Bedrooms"
+msgstr ""
+
+#: inc/PostType.php:18
+msgctxt "Post type singular name"
+msgid "Bedroom"
+msgstr ""
+
+#: inc/PostType.php:19
+msgctxt "Admin Menu text"
+msgid "Bedrooms"
+msgstr ""
+
+#: inc/PostType.php:20
+msgctxt "Add New on Toolbar"
+msgid "Bedroom"
+msgstr ""
+
+#: inc/PostType.php:21
+msgid "Add Bedroom"
+msgstr ""
+
+#: inc/PostType.php:22
+msgid "Add New Bedroom"
+msgstr ""
+
+#: inc/PostType.php:23
+msgid "New Bedroom"
+msgstr ""
+
+#: inc/PostType.php:24
+msgid "Edit Bedroom"
+msgstr ""
+
+#: inc/PostType.php:25
+msgid "View Bedroom"
+msgstr ""
+
+#: inc/PostType.php:26
+msgid "All Bedrooms"
+msgstr ""
+
+#: inc/PostType.php:27
+msgid "Search Bedrooms"
+msgstr ""
+
+#: inc/PostType.php:28
+msgid "Parent Bedrooms:"
+msgstr ""
+
+#: inc/PostType.php:29
+msgid "No Bedrooms Found"
+msgstr ""
+
+#: inc/PostType.php:30
+msgid "No Bedrooms Found in Trash"
+msgstr ""
+
+#: inc/PostType.php:31
+msgid "Bedroom Image"
+msgstr ""
+
+#: inc/PostType.php:32
+msgid "Set Bedroom Image"
+msgstr ""
+
+#: inc/PostType.php:33
+msgid "Remove Bedroom Image"
+msgstr ""
+
+#: inc/PostType.php:34
+msgid "Use as Bedroom Image"
+msgstr ""
+
+#: inc/PostType.php:35
+msgid "Bedroom Archives"
+msgstr ""
+
+#: inc/PostType.php:36
+msgid "Insert into bedroom"
+msgstr ""
+
+#: inc/PostType.php:37
+msgid "Uploaded to this bedroom"
+msgstr ""
+
+#: inc/PostType.php:38
+msgid "Filter bedrooms list"
+msgstr ""
+
+#: inc/PostType.php:39
+msgid "Bedrooms list navigation"
+msgstr ""
+
+#: inc/PostType.php:40
+msgid "Bedrooms list"
+msgstr ""
+
+#: inc/Taxonomies.php:16
+msgctxt "taxonomy general name"
+msgid "Bed types"
+msgstr ""
+
+#: inc/Taxonomies.php:17
+msgctxt "taxonomy singular name"
+msgid "Bed type"
+msgstr ""
+
+#: inc/Taxonomies.php:18
+msgid "Bed types"
+msgstr ""
+
+#: inc/Taxonomies.php:19
+msgid "All bed types"
+msgstr ""
+
+#: inc/Taxonomies.php:20
+msgid "Edit bed type"
+msgstr ""
+
+#: inc/Taxonomies.php:21
+msgid "View bed type"
+msgstr ""
+
+#: inc/Taxonomies.php:22
+msgid "Update bed type"
+msgstr ""
+
+#: inc/Taxonomies.php:23
+msgid "Add a new bed type"
+msgstr ""
+
+#: inc/Taxonomies.php:24
+msgid "New bed type name"
+msgstr ""
+
+#: inc/Taxonomies.php:25
+msgid "Parent bed type"
+msgstr ""
+
+#: inc/Taxonomies.php:26
+msgid "Parent bed type :"
+msgstr ""
+
+#: inc/Taxonomies.php:27
+msgid "Search for bed types"
+msgstr ""
+
+#: inc/Taxonomies.php:28
+msgid "Popular bed types"
+msgstr ""
+
+#: inc/Taxonomies.php:29
+msgid "Separate bed types with commas"
+msgstr ""
+
+#: inc/Taxonomies.php:30
+msgid "Add or remove bed types"
+msgstr ""
+
+#: inc/Taxonomies.php:31
+msgid "Choose from the most used bed types"
+msgstr ""
+
+#: inc/Taxonomies.php:32
+msgid "No bed types found"
+msgstr ""
+
+#: inc/Taxonomies.php:33
+msgid "Back to bed types"
+msgstr ""
+
+#: inc/Taxonomies.php:54
+msgctxt "taxonomy general name"
+msgid "Price ranges"
+msgstr ""
+
+#: inc/Taxonomies.php:55
+msgctxt "taxonomy singular name"
+msgid "Price range"
+msgstr ""
+
+#: inc/Taxonomies.php:56
+msgid "Price range"
+msgstr ""
+
+#: inc/Taxonomies.php:57
+msgid "All price ranges"
+msgstr ""
+
+#: inc/Taxonomies.php:58
+msgid "Edit price range"
+msgstr ""
+
+#: inc/Taxonomies.php:59
+msgid "View price range"
+msgstr ""
+
+#: inc/Taxonomies.php:60
+msgid "Update price range"
+msgstr ""
+
+#: inc/Taxonomies.php:61
+msgid "Add a new price range"
+msgstr ""
+
+#: inc/Taxonomies.php:62
+msgid "New price range name"
+msgstr ""
+
+#: inc/Taxonomies.php:63
+msgid "Parent price range"
+msgstr ""
+
+#: inc/Taxonomies.php:64
+msgid "Parent price range :"
+msgstr ""
+
+#: inc/Taxonomies.php:65
+msgid "Search for price ranges"
+msgstr ""
+
+#: inc/Taxonomies.php:66
+msgid "Popular price ranges"
+msgstr ""
+
+#: inc/Taxonomies.php:67
+msgid "Separate price ranges with commas"
+msgstr ""
+
+#: inc/Taxonomies.php:68
+msgid "Add or remove price ranges"
+msgstr ""
+
+#: inc/Taxonomies.php:69
+msgid "Choose from the most used price ranges"
+msgstr ""
+
+#: inc/Taxonomies.php:70
+msgid "No price ranges found"
+msgstr ""
+
+#: inc/Taxonomies.php:71
+msgid "Back to price ranges"
+msgstr ""
