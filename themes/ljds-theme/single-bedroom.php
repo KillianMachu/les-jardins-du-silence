@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php wp_head(); ?>
+
+<?php block_template_part( 'header' ); ?>
 
 <div class="single-bedroom">
 
@@ -67,3 +69,6 @@
     <?php endwhile; endif; ?>
 
 </div>
+
+<?php block_template_part( 'footer' ); ?>
+<?php wp_footer(); ?>

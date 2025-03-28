@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php wp_head(); ?>
+
+<?php block_template_part( 'header' ); ?>
 
 <?php \LjdsBedroomManager\Filters::display() ?>
 <?php if ( have_posts() ) : ?>
@@ -56,3 +58,6 @@
 <?php else : ?>
     <p>Aucun article trouvé.</p>
 <?php endif; ?>
+
+<?php block_template_part( 'footer' ); ?>
+<?php wp_footer(); ?>
