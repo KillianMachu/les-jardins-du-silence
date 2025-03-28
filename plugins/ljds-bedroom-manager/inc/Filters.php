@@ -18,8 +18,16 @@ class Filters
         if (is_post_type_archive(PostType::POST_TYPE)) {
             $meta_query = [];
             foreach ($_POST as $name => $value) {
-                if (str_contains($name, 'filter') && !empty($value)) {
-                    $key = str_replace('filter-', '', $name);
+                if (str_contains($name, 'filter-select') && !empty($value)) {
+                    $key = str_replace('filter-select-', '', $name);
+
+                    $meta_query[] = [
+                        'key' => $key,
+                        'value' => $value
+                    ];
+                }
+                if (str_contains($name, 'filter-range') && !empty($value)) {
+                    $key = str_replace('filter-range-', '', $name);
                     $min = (int)$value['min'];
                     $max = (int)$value['max'];
 
