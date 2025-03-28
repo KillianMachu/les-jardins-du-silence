@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
+<?php \LjdsBedroomManager\Filters::display() ?>
 <?php if ( have_posts() ) : ?>
     <div class="archive-page">
+
 
         <?php while ( have_posts() ) : the_post(); ?>
 

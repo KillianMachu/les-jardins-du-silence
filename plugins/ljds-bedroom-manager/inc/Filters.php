@@ -20,10 +20,8 @@ class Filters
             foreach ($_POST as $name => $value) {
                 if (str_contains($name, 'filter') && !empty($value)) {
                     $key = str_replace('filter-', '', $name);
-                    var_dump($key, $value);
                     $min = (int)$value['min'];
                     $max = (int)$value['max'];
-                    var_dump($min, $max);
 
                     $meta_query[] = [
                         'key' => $key,
