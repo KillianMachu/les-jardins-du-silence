@@ -4,55 +4,64 @@
 
 <?php \LjdsBedroomManager\Filters::display() ?>
 <?php if ( have_posts() ) : ?>
-    <div class="archive-page">
+    <div class="rooms-container">
+        <div class="rooms-grid">
 
 
-        <?php while ( have_posts() ) : the_post(); ?>
+            <?php while ( have_posts() ) : the_post(); ?>
+                <?php
+                $couchages = get_the_terms( get_the_ID(), 'bed_type' );
+                $couchages_list = [];
+                if ( $couchages && ! is_wp_error( $couchages ) ) {
+                    $couchages_list = wp_list_pluck( $couchages, 'name' );
+                }
 
-            <div class="archive-item">
+                $gamme_tarifaire = get_the_terms( get_the_ID(), 'price_range' );
+                $gamme_tarifaire_list = [];
+                if ( $gamme_tarifaire && ! is_wp_error( $gamme_tarifaire ) ) :
+                    $gamme_list = wp_list_pluck( $gamme_tarifaire, 'name' );
+                endif;
+                ?>
 
-                <?php if ( has_post_thumbnail() ) : ?>
-                    <div class="archive-item-image">
-                        <?php the_post_thumbnail('full'); ?>
+                <div class="room-card">
+
+                    <?php if ( has_post_thumbnail() ) : ?>
+                        <div class="image-container">
+                            <?php the_post_thumbnail('full'); ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <div class="card-content">
+                        <h2 class="room-title">
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        </h2>
+                        <p class="room-description">
+                            <?php the_excerpt(); ?>
+                        </p>
+                        <div class="info-row">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/bed.svg" alt="bed"/>
+                            <span class="info-text">
+                                <span class="couchages">Couchages: <?= implode( ', ', $couchages_list ) ?></span>
+                            </span>
+                        </div>
+
+                        <div class="info-row">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/euro.svg" alt="bed"/>
+                            <span class="info-text">
+                                <span class="couchages">Tarif: <?= implode( ', ', $gamme_list ) ?></span>
+                            </span>
+                        </div>
                     </div>
-                <?php endif; ?>
 
-                <h2 class="archive-item-title">
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                </h2>
+                    <div class="details-button">
+                        <a href="<?php the_permalink(); ?>">Voir la chambre</a>
+                    </div>
 
-                <div class="archive-item-excerpt">
-                    <?php the_excerpt(); ?>
                 </div>
 
-                <div class="archive-item-couchages">
-                    <?php
-                    $couchages = get_the_terms( get_the_ID(), 'bed_type' );
-                    if ( $couchages && ! is_wp_error( $couchages ) ) :
-                        $couchages_list = wp_list_pluck( $couchages, 'name' );
-                        echo '<span class="couchages">Couchages: ' . implode( ', ', $couchages_list ) . '</span>';
-                    endif;
-                    ?>
-                </div>
+            <?php endwhile; ?>
 
-                <div class="archive-item-gamme-tarifaire">
-                    <?php
-                    $gamme_tarifaire = get_the_terms( get_the_ID(), 'price_range' );
-                    if ( $gamme_tarifaire && ! is_wp_error( $gamme_tarifaire ) ) :
-                        $gamme_list = wp_list_pluck( $gamme_tarifaire, 'name' );
-                        echo '<span class="gamme-tarifaire">Tarif: ' . implode( ', ', $gamme_list ) . '</span>';
-                    endif;
-                    ?>
-                </div>
-
-                <div class="archive-item-button">
-                    <a href="<?php the_permalink(); ?>" class="button">Voir l'article</a>
-                </div>
-
-            </div>
-
-        <?php endwhile; ?>
-
+        </div>
     </div>
 
 <?php else : ?>

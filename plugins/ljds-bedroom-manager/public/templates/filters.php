@@ -36,24 +36,29 @@ $action = home_url($wp->request);
 
 ?>
 
-<form method="post" action="<?= $action ?>">
-    <label for="bed_number_range">Nombre de lits :</label>
-    <select name="filter-select-bed_number"">
-        <option value="">Choisir le nombre de lits</option>
-        <?php foreach ($bed_number as $choice) : ?>
-            <option value="<?= $choice ?>" <?= $_POST && $_POST['filter-select-bed_number'] === $choice ? 'selected' : '' ?>><?= $choice ?></option>
-        <?php endforeach; ?>
-    </select>
-
-    <label for="bedroom_price_range">Prix de la chambre :</label>
-    <input type="range" name="filter-range-bedroom_price[min]" id="bedroom_price_range_min"
-           min="<?= $min_max_bedroom_price['min'] ?>"
-           max="<?= $min_max_bedroom_price['max'] ?>" step="10"
-           value="<?= $_POST['filter-range-bedroom_price']['min'] ?? $min_max_bedroom_price['min']  ?>" />
-    <input type="range" name="filter-range-bedroom_price[max]" id="bedroom_price_range_max"
-           min="<?= $min_max_bedroom_price['min'] ?>"
-           max="<?= $min_max_bedroom_price['max'] ?>" step="10"
-           value="<?= $_POST['filter-range-bedroom_price']['max'] ?? $min_max_bedroom_price['max']  ?>" />
+<form class="filters" method="post" action="<?= $action ?>">
+    <div class="inputs">
+        <div>
+            <label for="bed_number">Nombre de lits :</label>
+            <select name="filter-select-bed_number" id="bed_number">
+                <option value="">Choisir le nombre de lits</option>
+                <?php foreach ($bed_number as $choice) : ?>
+                    <option value="<?= $choice ?>" <?= $_POST && $_POST['filter-select-bed_number'] === $choice ? 'selected' : '' ?>><?= $choice ?></option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+        <div>
+            <label for="bedroom_price_range">Prix de la chambre :</label>
+            <input type="range" name="filter-range-bedroom_price[min]" id="bedroom_price_range_min"
+                   min="<?= $min_max_bedroom_price['min'] ?>"
+                   max="<?= $min_max_bedroom_price['max'] ?>" step="10"
+                   value="<?= $_POST['filter-range-bedroom_price']['min'] ?? $min_max_bedroom_price['min']  ?>" />
+            <input type="range" name="filter-range-bedroom_price[max]" id="bedroom_price_range_max"
+                   min="<?= $min_max_bedroom_price['min'] ?>"
+                   max="<?= $min_max_bedroom_price['max'] ?>" step="10"
+                   value="<?= $_POST['filter-range-bedroom_price']['max'] ?? $min_max_bedroom_price['max']  ?>" />
+        </div>
+    </div>
 
     <input type="submit" value="Filtrer" />
 </form>
